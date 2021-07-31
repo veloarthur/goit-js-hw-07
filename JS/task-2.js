@@ -7,6 +7,7 @@ const ingredients = [
   "Приправы",
 ];
 const ingredientsEl = document.getElementById("ingredients");
+const arrayOfLis = [];
 
 const elements = ingredients.map((el) => {
   const liElement = document.createElement("li");
@@ -15,6 +16,4 @@ const elements = ingredients.map((el) => {
   return liElement;
 });
 
-ingredientsEl.append(...elements);
-
-console.log(ingredients);
+ingredientsEl.append(...arrayOfLis);
